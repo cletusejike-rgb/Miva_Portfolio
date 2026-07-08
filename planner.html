@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner - Eneje Cletus Ejike</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Menu -->
+    <header>
+        <div class="logo">ECE Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html" class="active">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <section class="planner-box">
+            <header class="section-title">
+                <h1>Interactive Academic Planner</h1>
+                <p>Manage your daily assignment routines, track study tasks, and check off milestones.</p>
+            </header>
+
+            <!-- Interactive Task Form Controls Wrapper Area -->
+            <div class="input-section">
+                <h2>Add New Study Task</h2>
+                <div class="input-row">
+                    <input type="text" id="task-input" placeholder="e.g., Read Module 3 of COS 106 text resources..." maxlength="100">
+                    <button id="add-task-btn">Add Task</button>
+                </div>
+            </div>
+
+            <!-- Display Results Output Section -->
+            <div class="display-section">
+                <h2>My Pending and Completed Tasks</h2>
+                <ul id="task-list" class="task-list-container">
+                    <!-- Dynamic tasks elements will get outputted here by JavaScript program execution logic -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Eneje Cletus Ejike. All Rights Reserved | COS 106 Assignment</p>
+    </footer>
+
+    <!-- Interactive Execution Logic Script Reference Connection Point -->
+    <script src="js/script.js"></script>
+</body>
+</html>

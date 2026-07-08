@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Eneje Cletus Ejike</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation Menu -->
+    <header>
+        <div class="logo">ECE Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html">Academic Planner</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <section class="contact-box">
+            <header class="section-title">
+                <h1>Contact Registration Form</h1>
+                <p>Please provide your information below. All fields are verified dynamically.</p>
+            </header>
+
+            <!-- Form Layout Structure -->
+            <form id="custom-contact-form" novalidate>
+                <div class="form-group">
+                    <label for="user-name">Full Name</label>
+                    <input type="text" id="user-name" placeholder="Enter your full name">
+                    <small class="error-msg" id="name-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-email">Email Address</label>
+                    <input type="email" id="user-email" placeholder="username@example.com">
+                    <small class="error-msg" id="email-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-phone">Phone Number</label>
+                    <input type="text" id="user-phone" placeholder="Digits only (e.g., 08012345678)">
+                    <small class="error-msg" id="phone-error"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-message">Message</label>
+                    <textarea id="user-message" rows="5" placeholder="Type your academic or project inquiry here..."></textarea>
+                    <small class="error-msg" id="message-error"></small>
+                </div>
+
+                <button type="submit" id="submit-form-btn">Submit Form</button>
+                <div id="form-success-msg"></div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Eneje Cletus Ejike. All Rights Reserved | COS 106 Assignment</p>
+    </footer>
+
+    <!-- Link to the Validation Script file -->
+    <script src="js/contact-validation.js"></script>
+</body>
+</html>
